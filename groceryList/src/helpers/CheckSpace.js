@@ -1,0 +1,1 @@
+export const CheckSpace = event => event.key.charCodeAt() === 32 ? event.preventDefault() : null

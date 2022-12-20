@@ -1,0 +1,135 @@
+:root {
+    --inputFs: clamp(1.3rem, 2.2vw + .35rem, 1.9rem);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: white;
+    font-family: Papyrus;
+    font-size: clamp(1.5rem, 2.2vw + .35rem, 2.15rem);
+    font-weight: bolder;
+    letter-spacing: .15em;
+    user-select: none;
+    /* transition: .5s all ease-in-out; */
+}
+
+
+
+
+
+
+footer {
+    background-color: blue;
+}
+
+p {
+    margin-inline: 1em;
+    padding: 1em;
+}
+
+button,
+select {
+    margin: 1em;
+    font-family: inherit;
+    padding: .4em;
+    color: white;
+    background-color: hsl(200, 100%, 50%);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: var(--inputFs);
+    border-radius: 5px;
+}
+
+select {
+    font-size: clamp(1.3rem, 1.5vw + .35rem, 1.7rem);
+}
+
+button:hover {
+    background-color: hsl(200, 100%, 35%);
+}
+
+div {
+    text-align: center;
+    font-size: inherit;
+}
+
+input {
+    margin: 1em;
+    caret-color: aqua;
+    border-color: aqua;
+    color: gray;
+    outline: 1px solid aqua;
+    font-family: inherit;
+    font-size: var(--inputFs);
+    padding: .2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.inlineForm {
+    display: inline;
+}
+
+.errorParagraph {
+    color: darkred;
+    outline: 2px dashed black;
+    font-size: clamp(1.5rem, 3vw + .75rem, 3.5rem);
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+    animation: blink 2s linear 0s normal infinite both;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes blink {
+    0% {
+        color: darkred;
+    }
+
+    50% {
+        color: red;
+    }
+}
+
+
+.p_5 {
+    padding: .5em;
+}
+
+.btn {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+
+
+/* form */
+.multiplicationSign::after {
+    content: 'X';
+}
+
+.divisionSign::after {
+    content: '/';
+}
+
+/*  */
