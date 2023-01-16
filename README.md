@@ -1,4 +1,4 @@
-# GroceryList_React_Express
+# React + Express
 
 Run "git clone https://github.com/Bepis1559/GroceryList_React_Express.git." "Cd groceryList" and then "npm i ".
 This is a small project for demonstrating React + Express knowledge . Please cd into groceryList and run the command "npm run dev" in order to start
